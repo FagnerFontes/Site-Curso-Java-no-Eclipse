@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Curso-Java-no-Eclipse/Curso-Java/src/POO"
+		},
+		{
+			"path": "../Curso-Java-no-Eclipse/Curso-Java/src/strings"
+		},
+		{
+			"path": "../Curso-Java-no-Eclipse/Curso-Java/src/tratamentoxceções"
+		},
+		{
+			"path": "../Curso-Java-no-Eclipse/Curso-Java/src/condicionais"
+		},
+		{
+			"path": "../Curso-Java-no-Eclipse/Curso-Java/src/laços"
+		},
+		{
+			"path": "../Curso-Java-no-Eclipse/Curso-Java/src/metodosSemRetorno"
+		}
+	],
+	"settings": {}
+}
