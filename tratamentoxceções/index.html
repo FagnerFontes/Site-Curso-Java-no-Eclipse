@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Exceções</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <style>
+       
+       p{
+        color:rgb(184, 37, 11);
+        font-size: 18px;
+        font-family: 'roboto';
+       }; 
+
+      
+        i {
+            color: #20B2AA;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        destaque {
+            color: tomato;
+        }
+
+        strong{
+            color: #07312f;
+            font-weight: 700; 
+            color: firebrick;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+    </style>
+
+</head>
+<style>
+
+</style>
+
+<body>
+   
+
+
+    <h3 class="container-fluid p-2 bg-body-secondary fixed-top text-center text-body"> Tratamento de Exceções
+
+       
+    </h1>
+    <div class="p-4 invisible"></div>
+    <br>
+    <div class="container py-5">
+        <h1>Exceções</h1>
+
+        <p>
+            Ao executar o código Java, diferentes erros podem acontecer: 
+
+            <ul>
+                <li>erros de codificação feitos pelo programador</li>
+                <li>erros devido a entrada ou outros erros imprevistos.</li>
+            </ul>
+
+           Quando ocorre um erro, o Java normalmente para e gera uma mensagem de erro. O termo técnico para isso é: Java lançará uma <strong>exceção</strong> <destaque>jogará um erro.</destaque>
+        </p>
+
+        <p>
+            De forma interpretativa em Java, um erro é algo irreparável, a aplicação trava ou encerrada drásticamente. Já exceções é um fluxo inesperado da nossa aplicação exemplo: 
+
+            <ul>
+                <li>Querer dividir um valor por zero.</li>
+                <li>Querer abrir um arquivo por zero.</li>
+                <li>Abrir uma conexão de banco, com usuário e/ou senha inválida</li>
+            </ul>
+
+            Todos estes cenários e os demais, não são erro mas sim fluxos, são previstos pela aplicação.
+
+            É ai que entra uma responsabilidade do desenvolvedor, prever situações iguais a estas e realizar o que denominamos de <strong>Tratamento de Exceções.</strong>
+
+        </p>
+       <ol>
+        <li> <h5>Hierarquia das Exceções: </h5></li>
+        <ul>
+            <li>Todas as exceções em Java são derivadas da classe <strong>Throwable</strong>. Existem duas subclasses de <strong>Throwable</strong></li>.
+
+            <ol type="I">
+                <li><strong>Exception :  </strong>Representa condições que um aplicativo pode querer capturar e tratar. Dentro <strong>Exception</strong>, há duas categorias: </li>
+
+                <ul>
+                    <li>Dentro de <strong>Excption</strong>, há duas categorias: 
+
+                        <ul>
+                            <li><strong>checked exceptions</strong>: São verificadas em tempo de compilação. O compilador força o programa a tratar exceções. Ex.: <destaque>IOException</destaque>, <destaque>SQLException</destaque>
+                            
+                             
+                            </li>
+
+                            <li><strong>unchecked exceptions</strong> (exceções não verificadas): (exceções não verificadas): Não são verificadas em tempo de compilação, são deverivadas de <destaque>RuntimeException</destaque>. Ex:. <destaque>NullPointerException</destaque>, <destaque>ArrayIndexOutofBoundsException.</destaque></li>
+                        </ul>
+                    </li>
+                </ul>
+            </ol>
+        </ul>
+
+        <li class="mt-3"><h5>Blocos Try-Catch-Finally</h5></li>
+        <ul>
+            <li><Strong>try</Strong> : O bloco de código que pode gerar uma exceção é colocado dentro do bloco <strong>try</strong></li>
+
+            <li><strong>catch</strong>: Captura e trata a exceção. Pode haver múltiplos blocos <strong>catch</strong> para capturar diferentes tipos de exceções.</li>
+
+            <li><strong>finally</strong>: Um bloco opcional que sempre é executado, quer a exceção ocorra ou não. É útil para liberar recursos, como fechar arquivos ou conexão de banco de dados.</li>
+        </ul>
+
+        <li class="mt-3"><h6>Throws : </h6>
+            A palavra-chave <strong class="d-lg-inline-block">throws</strong> é usada para indicar que ele pode gerar exceções verificadas, que devem ser tratadas ou declaradas pela classe que chama o método.           
+        </li>
+        <ul>
+
+        </ul>
+       </ol>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html

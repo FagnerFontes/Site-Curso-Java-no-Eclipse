@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos de Strings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <style>
+       
+       p{
+        color:rgb(184, 37, 11);
+        font-size: 18px;
+        font-family: 'roboto';
+       }; 
+
+      
+        i {
+            color: #20B2AA;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        destaque {
+            color: #07312f;
+        }
+
+        strong{
+            color: #07312f;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+    </style>
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <h1 class="container-fluid p-2 bg-body-secondary fixed-top text-center text-body"> Métodos de Strings
+    </h1>
+    <div class="p-4 invisible"></div>
+    <br>
+    <div class="container py-5">
+        
+        <p>
+            Em Java, a classe <strong>'String'</strong> fornece uma variedade de métodos para manipular e operar em sequências de caracteres. Esses métodos permitem realizar tarefas como comparação, concatenação, substituição, extração de substrings e muito mais. 
+        </p>
+
+        <h5>Métodos Comuns da Classe 'String'</h5>
+        <ol>
+            <li class="mt-4"><h6>lenght(): </h6>
+            <p>
+                <ul>
+                    <li>
+                        <strong>Descrição:  </strong>Retorna o comprimento da string.
+                        Ex.: 
+                        <img src="./img/metodoLenght.png" alt="">
+                    </li>
+                    
+                </ul>
+            </p>
+            
+            </li>
+
+            <li class="mt-4">
+                   <strong>chartAt (int index) :</strong>  
+            <ul>
+                    <li><strong> Descrição</strong>:</li>Retorna o caractere no índice especificado.   
+            <img src="./img/metodoCharAt.png" alt="">
+            </ul>
+           </li>
+           
+           <li class="mt-3">
+                <strong>substring (int beginIndex, int endIndex): </strong>
+                
+                <ul>
+                    <li>
+                        <strong>Descrição: </strong> Retorna uma nova string que é uma substring da string original, começando no índice <strong>beginIndex</strong> e terminando no índice <strong>endIndex</strong>
+                    </li>
+                </ul>
+                <img src="./img/metodoSubstring.png" alt="">
+           </li>
+            
+           <li class="mt-3">
+            <strong>IndexOf (String str): </strong>
+            
+            <ul>
+                <li>
+                    <strong>Descrição: </strong> Retorna o índice da primeira ocorrência da string especificada. Se não for encontrada, retorna -1. 
+                </li>
+            </ul>
+            <img src="./img/metodoIndexOf.png" alt="">
+
+            <p class="mt-3">
+                Saída do programa abaixo
+            </p>
+
+            <img src="./img/saídaMetodoIndexOf.png" alt="">
+       </li>
+
+       <li class="mt-3">
+        <strong>LastindexOf (String nome): </strong>
+        
+        <ul>
+            <li>
+                <strong>Descrição: </strong> Retorna o índice da última ocorrência da string especifica. Se não for encontada, retorna -1
+            </li>
+        </ul>
+        <img src="./img/metodoLastIndexOf.png" alt="">
+
+
+   </li>
+
+   <li class="mt-3">
+    <strong>equals (Object obj): </strong>
+    
+    <ul>
+        <li>
+            <strong>Descrição:  </strong> Compara a string a um objeto especificado. Retorna <i>true</i> se ambos são strings iguais. 
+
+
+        </li>
+    </ul>
+    <img src="./img/metodoequals.png" alt="">
+
+    </li>
+
+    <li class="mt-3">
+        <strong>toLowerCase (): </strong>
+        
+        <ul>
+            <li>
+                <strong>Descrição:  </strong> Converte todos os caracteres da string para minúsculas. 
+            </li>
+        </ul>
+        <img src="./img/metodo.toLouwerCase.png" alt="">
+        </li>
+
+        <li class="mt-3">
+            <strong>toUpperCase (): </strong>
+            
+            <ul>
+                <li>
+                    <strong>Descrição:  </strong> Converte todos os caracteres da string para minúsculas. 
+                </li>
+            </ul>
+            <img src="./img/metodoToUpperCase.png" alt="">
+            </li>
+
+            <li class="mt-3">
+                <strong>trim(): </strong>
+                
+                <ul>
+                    <li>
+                        <strong>Descrição:  </strong> 
+                        Remove os espaços em branco no início e no final da string
+                    </li>
+                </ul>
+                <img src="./img/metodoTrim.png" alt="">
+               
+            </li>
+                <li class="mt-3">
+                    <strong>replace(char oldChar, char newChar): </strong>
+                    
+                    <ul>
+                        <li>
+                            <strong>Descrição:</strong> Este método é usado para substituir todas ocorrências de um caractere ou sequência de caracteres por outro caractere ou sequência de caracteres. Ele tem duas formas pricipais. 
+
+                            <ul>
+                                <li>
+                                    <h6>Substituir caractere </h6>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                    </ul>
+                    <img src="./img/metodoReplace.png" alt="">
+            </li>
+
+            <p>
+                Saída do código abaixo: 
+            </p>
+
+            <img src="./img/metodoSaídaReplace.png" alt="">
+
+        </li>
+        <li class="mt-3">
+            <strong>replace(CharSequence target, CharSequence replacement): </strong>
+            
+            <ul>
+                <li>
+                    <strong>Descrição:</strong> Substitui todas as ocorrências de uma sequência de caracteres por outra.
+                    
+                </li>
+            </ul>
+            <img src="./img/metodoReplace2.png" alt="">
+
+            <p>
+                Saída do programa abaixo
+            </p>
+            <img src="./img/saídaReplace2.png" alt="">
+    </li>
+
+</li>
+
+<li class="mt-3">
+    <strong>split(String regex): </strong>
+    
+    <ul>
+        <li>
+            <strong>Descrição:</strong> Divide a string em um array de strings com base na expressão regular especificada. 
+        </li>
+    </ul>
+    <img src="./img/metodoSplit.png" alt="">
+
+    
+</li>
+
+<li class="mt-3">
+    <strong>contains(CharSequence s ): </strong>
+    
+    <ul>
+        <li>
+            <strong>Descrição:</strong> Verifica se a string contém a sequêencia especificada. 
+        </li>
+    </ul>
+    <img src="./img/metodoContains.png" alt="">
+</li>
+
+<li class="mt-3">
+    <strong>contains(CharSequence s ): </strong>
+    
+    <ul>
+        <li>
+            <strong>Descrição:</strong> Verifica se a string começa com o prefixo especificao. 
+        </li>
+    </ul>
+    <img src="./img/metodoStarsWith.png" alt="">
+</li>
+           
+
+        </ol>
+        
+       
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html
